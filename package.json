@@ -6,6 +6,7 @@
   "type": "module",
   "license": "Open BSV License",
   "dependencies": {
+    "@bsv/ecpm-permission-module": "0.1.3",
     "@bsv/sdk": "^2.8.1",
     "@bsv/verifast": "^0.3.6",
     "@capacitor/android": "^7.4.2",
@@ -42,7 +43,8 @@
     "ios:testflight": "HANDCASH_IOS_UPLOAD=1 bash scripts/build-ios.sh",
     "test:ios-native": "bash scripts/test-ios-native.sh",
     "assert:ui-core": "node scripts/assert-ui-core.mjs",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test:ecpm": "node scripts/test-ecpm.mjs"
   },
   "devDependencies": {
     "@capacitor/cli": "^7.4.2",
